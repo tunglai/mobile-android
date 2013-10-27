@@ -29,7 +29,7 @@
   <string name="Copy">Copiar</string>
   <string name="Move">Cut</string>
   <string name="Rename">Renomear</string>
-  <string name="CreateFolder">Create Folder</string>
+  <string name="CreateFolder">Criar pasta</string>
   <string name="Send">Enviar</string>
   <string name="Paste">Paste</string>
   <string name="Cancel">Cancelar</string>
@@ -117,7 +117,7 @@
   <string name="UpdatedATask"> has just updated the task:</string>
   <string name="DocumentRenameTitle">Rename Folder</string>
   <string name="DocumentRenameContent">Enter a new name:</string>
-  <string name="DocumentCreateTitle">Create Folder</string>
+  <string name="DocumentCreateTitle">Criar pasta</string>
   <string name="DocumentCreateContent">Enter the folder name:</string>
   <string name="DocumentCannotDelete">Can not delete this file.</string>
   <string name="DocumentCopyPasteError">Error while pasting.</string>
@@ -163,7 +163,7 @@
   <string name="SignUp">Sign Up</string>
   <string name="LogIn">Log In</string>
   <string name="SkipStep">or skip this for now</string>
-  <string name="Or">or</string>
+  <string name="Or">ou</string>
 
   <string name="SliderDesc1">Activity streams</string>
   <string name="SliderDesc2">Comments and likes</string>
