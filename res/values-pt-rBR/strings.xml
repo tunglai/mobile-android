@@ -24,7 +24,7 @@
   <string name="CannotEditServer">O servidor econtra-se em uso e não pode ser modificado/excluído. </string>
   <string name="English">Inglês</string>
   <string name="French">Francês</string>
-  <string name="German">German</string>
+  <string name="German">Alemão</string>
   <string name="Spanish">Spanish</string>
   <string name="CompliantMessage">Nós não podemos nos conectar a uma versão de plataforma compatível neste endereço, por favor, entre em contato com o administrador.</string>
   <string name="Delete">Excluir</string>
