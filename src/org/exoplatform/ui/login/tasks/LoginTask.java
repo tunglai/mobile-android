@@ -66,7 +66,7 @@ public class LoginTask extends AsyncTask<String, Void, Integer> {
 
       ExoDocumentUtils.setRepositoryHomeUrl(username, domain);
       return ExoConnectionUtils.checkPlatformRespose(response);
-    } catch(HttpHostConnectException e) {
+    } catch (HttpHostConnectException e) {
       Log.d(TAG, "HttpHostConnectException: " + e.getLocalizedMessage());
       return ExoConnectionUtils.SIGNIN_SERVER_NAV;
     } catch (IOException e) {

@@ -19,6 +19,8 @@
 package org.exoplatform.utils;
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -556,14 +558,42 @@ public class ExoConnectionUtils {
     }
   }
 
+  /**
+   * Validate url and ip address
+   * @param url
+   * @return
+   */
   public static boolean validateUrl(String url) {
     return Patterns.WEB_URL.matcher(url).matches();
   }
 
+  /**
+   * Check if an url is an ip address
+   * @param url
+   * @return
+   */
+  public static boolean isIpAddress(String url) {
+
+    try {
+      URL _url    = new URL(url);
+      String host = _url.getHost();
+      return Patterns.IP_ADDRESS.matcher(host).matches();
+    } catch (MalformedURLException e) {
+      Log.d(TAG, "MalformedURLException : " + e.getLocalizedMessage());
+      return false;
+    }
+  }
+
+  /**
+   * Check if url belongs to the list of wrong tenant
+   * @param url
+   * @return
+   */
   public static boolean urlHasWrongTenant(String url) {
     return Arrays.asList(WRONG_CLOUD_URLS).contains(
         !url.startsWith(ExoConnectionUtils.HTTP) ? ExoConnectionUtils.HTTP + url : url);
   }
+
 
   /**
    * Clean up connection data to log out

@@ -145,7 +145,6 @@ public class LoginProxy implements
         mNewPassword = loginData.getString(PASSWORD);
         mDomain      = loginData.getString(DOMAIN);
         mTenant      = getTenant(mDomain);
-        // TODO: if this is a cloud server with invalid url, should raise a warning
         mEmail       = mNewUserName + "@" + mTenant + ".com";
         mWarningDialog = new LoginWarningDialog(mContext);
 
@@ -179,8 +178,11 @@ public class LoginProxy implements
         mNewUserName = loginData.getString(USERNAME);
         mNewPassword = loginData.getString(PASSWORD);
         mDomain      = loginData.getString(DOMAIN);
-        mTenant      = getTenant(mDomain);
-        mEmail       = mNewUserName + "@" + mTenant + ".com";
+
+        if (!ExoConnectionUtils.isIpAddress(mDomain)) {
+          mTenant      = getTenant(mDomain);
+          mEmail       = mNewUserName + "@" + mTenant + ".com";
+        }
 
         mWarningDialog = new LoginWarningDialog(mContext);
         mProgressDialog =
