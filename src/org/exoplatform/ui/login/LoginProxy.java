@@ -33,6 +33,8 @@ import org.exoplatform.utils.*;
 import org.exoplatform.widget.WaitingDialog;
 
 import java.util.ArrayList;
+import com.crashlytics.android.Crashlytics;
+
 
 
 /**
@@ -338,6 +340,10 @@ public class LoginProxy implements
 
       /** Login successfully - save data */
       case ExoConnectionUtils.LOGIN_SUSCESS:
+
+        if (mNewUserName!= null) Crashlytics.setUserName(mNewUserName);
+        Crashlytics.log(Log.INFO, TAG, "Successfully logging user " + mNewUserName
+          + " into domain " + mDomain);
 
         /* Set social and document settings */
         StringBuilder builder = new StringBuilder(mDomain)

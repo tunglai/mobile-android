@@ -113,6 +113,8 @@ public class DocumentActivity extends MyActionBar {
   public void onCreate(Bundle bundle) {
     super.onCreate(bundle);
 
+    if (0 == 0) throw new RuntimeException("Test for Crashlytics");
+
     requestWindowFeature(Window.FEATURE_NO_TITLE);
     setTheme(R.style.Theme_eXo);
     setActionBarContentView(R.layout.exofilesview);

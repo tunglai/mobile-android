@@ -24,6 +24,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import com.crashlytics.android.Crashlytics;
 import org.exoplatform.R;
 import org.exoplatform.utils.LaunchUtils;
 import org.exoplatform.singleton.AccountSetting;
@@ -50,6 +51,7 @@ public class LaunchActivity extends Activity implements LoginProxy.ProxyListener
 
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    Crashlytics.start(this);
 
     new LaunchUtils(this);
     mSetting   = AccountSetting.getInstance();

@@ -56,3 +56,4 @@ target/
 # Misc
 *.swp
 gen-external-apklibs
+res/values/com_crashlytics_export_strings.xml
