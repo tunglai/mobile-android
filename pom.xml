@@ -40,7 +40,24 @@
 	<slf4j-android.version>1.6.1-RC1</slf4j-android.version>
 	<greendroid.version>67aa3ed</greendroid.version>
   </properties>
-  
+
+    <repositories>
+
+        <repository>
+            <id>crashlytics-repo</id>
+            <url>http://download.crashlytics.com/maven</url>
+        </repository>
+
+    </repositories>
+    <pluginRepositories>
+
+        <pluginRepository>
+            <id>crashlytics-plugin-repo</id>
+            <url>http://download.crashlytics.com/maven</url>
+        </pluginRepository>
+
+    </pluginRepositories>
+
    <!-- Profiles definition for Android build -->
   <profiles>
     <profile>
@@ -105,6 +122,13 @@
   	  <artifactId>annotations</artifactId>
   	  <version>${android.annotations.version}</version>
     </dependency>
+
+      <!-- Dependency with Crashlytics -->
+      <dependency>
+          <groupId>com.crashlytics.android</groupId>
+          <artifactId>crashlytics</artifactId>
+          <version>[1.1.10,)</version>
+      </dependency>
   </dependencies>
   
   <build>
@@ -181,6 +205,27 @@
           </execution>
         </executions>
       </plugin>
+
+        <!-- Crashlytics maven plugin -->
+        <plugin>
+            <groupId>com.crashlytics</groupId>
+            <artifactId>crashlytics-maven</artifactId>
+            <version>1.3.1</version>
+            <executions>
+                <execution>
+                    <id>GenerateResources</id>
+                    <goals>
+                        <goal>GenerateResources</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>CleanupResources</id>
+                    <goals>
+                        <goal>CleanupResources</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
     <sourceDirectory>src</sourceDirectory>
   </build>

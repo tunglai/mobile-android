@@ -88,9 +88,14 @@ public class DocumentActivity extends MyActionBar {
 
   public ExoFile                 _fileForCurrentActionBar;
 
+  private static final String TAG = "eXo____DocumentActivity____";
+
+
   @Override
   public void onCreate(Bundle bundle) {
     super.onCreate(bundle);
+
+    if (0 == 0) throw new RuntimeException("Test for Crashlytics");
 
     requestWindowFeature(Window.FEATURE_NO_TITLE);
     setTheme(R.style.Theme_eXo);
