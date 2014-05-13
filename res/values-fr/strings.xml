@@ -3,7 +3,7 @@
 <resources>
   <string name="SignInButton">Connexion</string>
   <string name="SignInInformation">Connexion</string>
-  <string name="SigningIn">Connexion en cours&#8230;</string>
+  <string name="SigningIn">Connexion en cours...</string>
   <string name="NoServerSelected">Sélectionnez un serveur</string>
   <string name="NoUsernameEnter">Entrez votre nom d\'utilisateur</string>
   <string name="NoPasswordEnter">Entrez votre mot de passe</string>
@@ -35,10 +35,10 @@
   <string name="Send">Envoyer</string>
   <string name="Paste">Coller</string>
   <string name="Cancel">Annuler</string>
-  <string name="OK">OK</string>
+  <string name="OK">Valider</string>
   <string name="Remove">Supprimer</string>
   <string name="Documents">Documents</string>
-  <string name="Dashboard">Apps</string>
+  <string name="Dashboard">Applications</string>
   <string name="Settings">Réglages</string>
   <string name="GadgetsCannotBeRetrieved">Les données des gadgets ne peuvent pas être récupérées.</string>
   <string name="ActivityStream">Nouvelles</string>
@@ -47,10 +47,10 @@
   <string name="Me">Moi</string>
   <string name="MessageFrom">Message de</string>
   <string name="ShowMore">Plus</string>
-  <string name="LoadingData">Chargement des données&#8230;</string>
-  <string name="LoadingImage">Chargement de l\'image&#8230;</string>
-  <string name="SendingData">Données en cours d\'envoi&#8230;</string>
-  <string name="YourComment">Votre commentaire&#8230;</string>
+  <string name="LoadingData">Chargement des données...</string>
+  <string name="LoadingImage">Chargement de l\'image...</string>
+  <string name="SendingData">Données en cours d\'envoi...</string>
+  <string name="YourComment">Votre commentaire...</string>
   <string name="Comment">Commenter</string>
   <string name="StatusUpdate">Envoyer</string>
   <string name="NoLike">Personne n\'aime pour le moment</string>
@@ -147,23 +147,29 @@
   <string name="FileNotFound">Fichier introuvable.</string>
   <string name="FileNotSupported">Le format de ce fichier n\'est pas supporté.</string>
   <string name="CompatibleFileSuggest">Souhaitez-vous ouvrir ce fichier avec une application installée sur votre terminal ?</string>
-  <string name="OpenIn">Ouvrir avec &#8230;</string>
-  <string name="DownloadingFile">Téléchargement du fichier&#8230;</string>
+  <string name="OpenIn">Ouvrir avec ...</string>
+  <string name="DownloadingFile">Téléchargement du fichier...</string>
   <string name="MemoryWarning">Mémoire indisponible ou insuffisante.</string>
   <string name="SocialSettingTitle">SOCIAL</string>
   <string name="SocialSettingContent">Mémoriser mon filtre</string>
+  <string-array name="SocialTabs">
+    <item id="AllUpdates">Fil d\'actualités</item>
+    <item id="MyConnections">Mes Contacts</item>
+    <item id="MySpaces">Mes Espaces</item>
+    <item id="MyStatus">Mon Statut</item>
+  </string-array>
 
     <!-- Welcome screen -->
   <string name="Slogan">Your social intranet, anywhere, anytime!</string>
-  <string name="title_template_step">Step</string>
+  <string name="title_template_step">Etape</string>
   <string name="SignUp">Sign Up</string>
   <string name="LogIn">Log In</string>
   <string name="SkipStep">or skip this for now</string>
-  <string name="Or">or</string>
+  <string name="Or">ou</string>
 
   <string name="SliderDesc1">Activity streams</string>
   <string name="SliderDesc2">Comments and likes</string>
-  <string name="SliderDesc3">Personal dashboards</string>
+  <string name="SliderDesc3">Tableaux de bord personnels</string>
   <string name="SliderDesc4">Files management</string>
   <string name="YourSocialIntranet">Your social intranet</string>
   <string name="Anywhere">anywhere</string>
@@ -176,7 +182,7 @@
   <string name="Email">email address</string>
   <string name="CreateAccount">Create your account</string>
   <string name="InvalidEmail">Please input a valid email address</string>
-  <string name="SigningUp">Signing up &#8230;</string>
+  <string name="SigningUp">Signing up …</string>
   <string name="InvalidSignUp">A problem occurs with the sign up process</string>
   <string name="WrongEmailDomain">Email Domain for this account is not correct</string>
   <string name="AccountExists">An account already exists for this email, you will be redirected to the login screen.</string>
@@ -186,7 +192,7 @@
 
     <!-- Sign In -->
   <string name="EmailSignIn">Enter your credentials and Login:</string>
-  <string name="ConnectOnPremise">Connect to an On Premise Installation</string>
+  <string name="ConnectOnPremise">Connectez-vous à une Installation sur Site</string>
   <string name="ServerNotAvailable">Impossible to connect to your intranet, please check its URL or contact your administrator.</string>
   <string name="InvalidCredentials">Impossible to connect, check your username and password.</string>
   <string name="NoAccountExists">No account exists for this email, check your email or signup.</string>
@@ -202,39 +208,31 @@
   <string name="YourIntranetHint">http://www.mycompany.com</string>
   <string name="PasswordHint">password</string>
   <string name="UserNameHint">username</string>
+
+    <!-- Setting -->
+  <string name="RememberMe">Mémoriser mon login</string>
+  <string name="Autologin">Connexion automatique</string>
+    <string name="LoginTitle">LOGIN</string>
+    <string name="EXO">EXO</string>
   <string name="Number1">1</string>
   <string name="Number2">2</string>
 
-    <!-- Setting -->
-    <string name="RememberMe">Mémoriser mon login</string>
-    <string name="Autologin">Connexion automatique</string>
-    <string name="LoginTitle">LOGIN</string>
-    <string name="EXO">EXO</string>
-
     <!-- Server edition -->
-    <string name="AddServer">Nouveau serveur</string>
-    <string name="ModifyServer">Modifier le serveur</string>
-    <string name="OptionalHint">Optionnel</string>
-    <string name="RequiredHint">Requis</string>
-    <string name="YourCredentials">Vos identifiants</string>
-    <string name="ServerName">Nom du serveur</string>
-    <string name="ServerUrl">Url du serveur</string>
-    <string name="StartCloudSignUpAssistant">Lancer l\'assistant de configuration</string>
-    <string name="ServerAdded">Serveur ajouté</string>
+  <string name="AddServer">Nouveau serveur</string>
+  <string name="ModifyServer">Modifier le serveur</string>
+  <string name="OptionalHint">Optionnel</string>
+  <string name="RequiredHint">Requis</string>
+  <string name="YourCredentials">Vos identifiants</string>
+  <string name="ServerName">Nom du serveur</string>
+  <string name="ServerUrl">Url du serveur</string>
+  <string name="StartCloudSignUpAssistant">Lancer l\'assistant de configuration</string>
+  <string name="ServerAdded">Serveur ajouté</string>
     <string name="ServerUpdated">Serveur mis à jour</string>
-    <string name="ServerDeleted">Serveur supprimé</string>
+  <string name="ServerDeleted">Serveur supprimé</string>
 
     <string name="ImageDesc">description de l\'image</string>
 
     <!-- Launch -->
-    <string name="RedirectToLogin">OK</string>
+  <string name="RedirectToLogin">OK</string>
     <string name="LoginWarningMsg">La connexion a échoué</string>
-
-
-    <string-array name="SocialTabs">
-    <item>Fil d\'actualités</item>
-    <item>Mes Contacts</item>
-    <item>Mes Espaces</item>
-    <item>Mon Statut</item>
-  </string-array>
 </resources>

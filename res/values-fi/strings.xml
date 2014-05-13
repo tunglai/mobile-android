@@ -42,7 +42,7 @@
   <string name="Settings">Settings</string>
   <string name="GadgetsCannotBeRetrieved">Gadgets cannot be retrieved.</string>
   <string name="ActivityStream">News</string>
-  <string name="ActivityDetail">Details</string>
+  <string name="ActivityDetail">Tarkemmat tiedot</string>
   <string name="You">You</string>
   <string name="Me">Me</string>
   <string name="MessageFrom">Message from</string>
@@ -130,7 +130,7 @@
   <string name="DocumentSettingTitle">DOCUMENTS</string>
   <string name="DocumentShowPrivateDrive">Show private drive</string>
   <string name="CalendarDescription">Description:</string>
-  <string name="CalendarLocation">Location:</string>
+  <string name="CalendarLocation">Sijainti:</string>
   <string name="CalendarStart">Start Time:</string>
   <string name="CalendarEnd">End Time:</string>
   <string name="SpecialCharacters">Special characters are not allowed.</string>
@@ -203,9 +203,9 @@
 
   <!-- On Premise -->
   <string name="OnPremise">On Premise</string>
-  <string name="EnterUrl">Enter the URL of your intranet</string>
+  <string name="EnterUrl">Enter URL of your intranet</string>
   <string name="EnterLogin">Enter your credentials and Login</string>
-  <string name="YourIntranetHint">http://www.mycompany.com</string>
+  <string name="YourIntranetHint">http://www.mycompany.com/intranet</string>
   <string name="PasswordHint">password</string>
   <string name="UserNameHint">username</string>
 
